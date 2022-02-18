@@ -1,9 +1,7 @@
 import { NavLink } from 'react-router-dom';
-
-import classes from './MainNavigation.module.css';
 import companyLogo from '../../assets/images/logo.png';
 
-const MainNavigation = () => {
+const Header = () => {
   return (
     <header>
     <nav class="navbar navbar-expand-sm navbar-dark">
@@ -49,4 +47,4 @@ const MainNavigation = () => {
   );
 };
 
-export default MainNavigation;
+export default Header;

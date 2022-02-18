@@ -5,7 +5,7 @@ import CreateItem from './pages/CreateItem';
 import Collection from './pages/Collection';
 import ListItem from './pages/ListItem';
 import Profile from './pages/Profile'
-import Layout from './components/layout/Layout';
+import Layout from './components/layout';
 
 function App() {
   return (
