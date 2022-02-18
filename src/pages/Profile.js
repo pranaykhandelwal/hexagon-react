@@ -6,7 +6,7 @@ import NoQuotesFound from '../components/quotes/NoQuotesFound';
 import useHttp from '../hooks/use-http';
 import { getAllQuotes } from '../lib/api';
 
-const AllQuotes = () => {
+const Profile = () => {
   const { sendRequest, status, data: loadedQuotes, error } = useHttp(
     getAllQuotes,
     true
@@ -35,4 +35,4 @@ const AllQuotes = () => {
   return <QuoteList quotes={loadedQuotes} />;
 };
 
-export default AllQuotes;
+export default Profile;

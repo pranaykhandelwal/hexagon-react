@@ -5,7 +5,7 @@ import QuoteForm from '../components/quotes/QuoteForm';
 import useHttp from '../hooks/use-http';
 import { addQuote } from '../lib/api';
 
-const NewQuote = () => {
+const CreateItem = () => {
   const { sendRequest, status } = useHttp(addQuote);
   const history = useHistory();
 
@@ -22,4 +22,4 @@ const NewQuote = () => {
   return <QuoteForm isLoading={status === 'pending'} onAddQuote={addQuoteHandler} />;
 };
 
-export default NewQuote;
+export default CreateItem;

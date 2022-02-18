@@ -7,7 +7,7 @@ import useHttp from '../hooks/use-http';
 import { getSingleQuote } from '../lib/api';
 import LoadingSpinner from '../components/UI/LoadingSpinner';
 
-const QuoteDetail = () => {
+const ListItem = () => {
   const match = useRouteMatch();
   const params = useParams();
 
@@ -55,4 +55,4 @@ const QuoteDetail = () => {
   );
 };
 
-export default QuoteDetail;
+export default ListItem;

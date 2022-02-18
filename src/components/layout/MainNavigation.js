@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import './MainNavigation.module.css';
+import classes from './MainNavigation.module.css';
 import companyLogo from '../../assets/images/logo.png';
 
 const MainNavigation = () => {
@@ -9,23 +9,33 @@ const MainNavigation = () => {
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img src={companyLogo} alt="Logo" style="width:60px;" class=""/> Marketplace
+            <img src={companyLogo} alt="Logo" style={{width:"60px"}} class=""/> Marketplace
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                <NavLink to='/home'  className="nav-link">
+                    Home
+                </NavLink>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="create-item.html">Create Item</a>
+                    <NavLink to='/create-item' className="nav-link">
+                        Create Item
+                    </NavLink>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="collection.html">Collection</a>
+                    <NavLink to='/collection' className="nav-link">
+                        Collection
+                    </NavLink>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="list-item.html">List Item</a>
+                    <NavLink to='/list-item' className="nav-link">
+                        List Item
+                    </NavLink>    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="profile.html"><i class="far fa-user-circle"></i></a>
+                    <NavLink to='/profile' className="nav-link">
+                    <i class="far fa-user-circle"></i>
+                    </NavLink>
                 </li>
                 <li class="nav-item">
                     <a type="button" class="nav-link btn_wlt" data-bs-toggle="modal" data-bs-target="#wallet_model">
