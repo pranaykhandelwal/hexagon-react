@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import companyLogo from '../../assets/images/logo.png';
 
 const Header = () => {
@@ -6,9 +6,9 @@ const Header = () => {
     <header>
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src={companyLogo} alt="Logo" style={{width:"60px"}} class=""/> Marketplace
-            </a>
+            <Link to='' className='navbar-brand'>
+                <img src={companyLogo} alt="Logo" style={{width:"60px"}} class=""/> Marketplace
+            </Link>
             <ul class="navbar-nav">
                 <li class="nav-item">
                 <NavLink to='/home'  className="nav-link">
