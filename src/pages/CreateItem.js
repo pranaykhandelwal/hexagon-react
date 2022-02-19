@@ -1,25 +1,13 @@
-import { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-
-import QuoteForm from '../components/quotes/QuoteForm';
-import useHttp from '../hooks/use-http';
-import { addQuote } from '../lib/api';
+import { Fragment } from 'react';
+import STOLIC_WALLET from '../assets/images/Stoic Wallet.png'
+import PLUG from '../assets/images/plug.png'
+import COMPUTER from '../assets/images/Internet Computer.png'
 
 const CreateItem = () => {
-  const { sendRequest, status } = useHttp(addQuote);
-  const history = useHistory();
-
-  useEffect(() => {
-    if (status === 'completed') {
-      history.push('/quotes');
-    }
-  }, [status, history]);
-
-  const addQuoteHandler = (quoteData) => {
-    sendRequest(quoteData);
-  };
-
-  return <QuoteForm isLoading={status === 'pending'} onAddQuote={addQuoteHandler} />;
+  return (
+    <Fragment>
+    </Fragment>
+  );
 };
 
 export default CreateItem;
