@@ -3,6 +3,7 @@ import Footer from '../footer';
 import Header from '../header';
 
 const Layout = (props) => {
+
   return (
     <Fragment>
       <Header />

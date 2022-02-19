@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import companyLogo from '../../assets/images/logo.png';
+import MyWallet from '../modals/my-wallet'
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+
   return (
     <header>
     <nav class="navbar navbar-expand-sm navbar-dark">
@@ -28,7 +33,7 @@ const Header = () => {
                 <li class="nav-item">
                     <NavLink to='/list-item' className="nav-link">
                         List Item
-                    </NavLink>    
+                    </NavLink>
                 </li>
                 <li class="nav-item">
                     <NavLink to='/profile' className="nav-link">
@@ -36,13 +41,14 @@ const Header = () => {
                     </NavLink>
                 </li>
                 <li class="nav-item">
-                    <a type="button" class="nav-link btn_wlt" data-bs-toggle="modal" data-bs-target="#wallet_model">
+                    <a type="button" class="nav-link btn_wlt" onClick={ handleShow }>
                         <i class="fas fa-wallet"></i>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
+    <MyWallet show={show} setShow={setShow}/>
     </header>
   );
 };
