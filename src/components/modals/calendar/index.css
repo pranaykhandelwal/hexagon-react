@@ -1,0 +1,25 @@
+.caldr_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.caldr_date hr.btwen {
+  height: 2px;
+  width: 15px;
+  background-color: #000;
+  margin-top: 35px;
+}
+
+.caldr_date hr.btwen2 {
+  height: 2px;
+  width: 15px;
+  background-color: #000;
+  margin-top: 4px;
+}
+
+.cldr_time {
+  margin-bottom: 1rem;
+  width: 45%;
+}

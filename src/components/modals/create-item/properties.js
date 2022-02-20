@@ -1,5 +1,4 @@
 import Modal from "react-bootstrap/Modal";
-import ModalDialog from 'react-bootstrap/ModalDialog'
 
 const CreateItemPropertiesModal = ({ show, handleState}) => {
   return (
