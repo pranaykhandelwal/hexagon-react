@@ -7,20 +7,20 @@ const MyWallet = ({ show, setShow }) => {
   const handleClose = () => setShow(false);
 
   return (
-    <Modal show={show} onHide={handleClose} className="fade wallet_mdl" id="wallet_model">
+    <Modal show={show} onHide={handleClose} className="wallet_mdl" id="wallet_model">
         <Modal.Header closeButton>
-          <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user-circle"></i> My Wallet</h5>
+          <h5 className="modal-title" id="exampleModalLabel"><i className="fas fa-user-circle"></i> My Wallet</h5>
         </Modal.Header>
         <Modal.Body>
           <p>Connect with one of our available wallet providers or create a new one.</p>
-          <div class="wlt_type">
-            <div class="wlt_area">
+          <div className="wlt_type">
+            <div className="wlt_area">
               <a href="https://www.stoicwallet.com"><img src={Stoic_Voilet} alt="stoic wallet"/>Stoic Wallet</a>
             </div>
-            <div class="wlt_area">
+            <div className="wlt_area">
               <a href="https://plugwallet.ooo"><img src={Plug} alt="plug" />Plug Wallet</a>
             </div>
-            <div class="wlt_area">
+            <div className="wlt_area">
               <a href="https://dfinity.org"><img src={Internet_Computer} alt="internet computer"/>Internet Computer </a>
             </div>
           </div>

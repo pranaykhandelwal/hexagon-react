@@ -1,5 +1,5 @@
-body {
-  font-family: Poppins, sans-serif;
+* {
+  font-family: Poppins, sans-serif !important;
   line-height: 1.5;
 }
 
@@ -316,50 +316,6 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
 }
 
-section.properties .main_sec .modal.show .modal-dialog {
-  max-width: 600px;
-}
-
-section.properties .main_sec .modal-content {
-  border-radius: 10px;
-  padding: 15px;
-}
-
-section.properties .main_sec .modal .modal-body .btn_addmore {
-  padding: 12px 16px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid #2216bd;
-  color: #2216bd;
-  border-radius: 10px;
-  transition: 1s all ease;
-}
-
-section.properties .main_sec .modal .modal-body .btn_addmore:hover {
-  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
-}
-
-section.properties .main_sec .modal-footer {
-  justify-content: center;
-}
-
-section.properties .main_sec .modal-footer .btn_save {
-  background-color: #2216bd;
-  padding: 12px 16px;
-  color: #ffff;
-  width: 120px;
-  border-radius: 10px;
-  transition: 1s all ease;
-}
-
-section.properties .main_sec .modal-footer .btn_save:hover {
-  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
-  background-color: transparent;
-  color: #2216bd;
-  border: 1px solid #2216bd;
-}
-
 .form-switch .form-check-input {
   width: 3em;
   height: 1.5em;
@@ -381,7 +337,7 @@ section.properties h3 {
   margin-top: 10px;
 }
 
-section properties h3 span {
+section .properties h3 span {
   color: rgb(32, 129, 226);
   text-decoration: none;
 }
@@ -1545,114 +1501,8 @@ section.list_content .content .duration .modal-dialog {
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
 }
-.wallet_mdl.modal .modal-body {
-  position: relative;
-  flex: 1 1 auto;
-  padding: 1rem 1rem;
-}
-.wallet_mdl.modal .modal-content .modal-body p {
-  font-size: 16px;
-  font-weight: 400;
-}
-.wallet_mdl .modal-footer {
-  background-color: #000;
-  min-height: 50px;
-}
-.wallet_mdl.modal .modal-content .wlt_type {
-  border: 1px solid rgb(229, 232, 235);
-  border-radius: 12px;
-}
-.wallet_mdl.modal .modal-content .wlt_type .wlt_area {
-  border-bottom: 1px solid rgb(229, 232, 235);
-  padding: 1rem;
-}
-.wallet_mdl.modal .modal-content .wlt_type .wlt_area:last-child {
-  border-bottom: none;
-}
-.wallet_mdl.modal .modal-content .wlt_type a {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 0;
-  text-decoration: none;
-  color: #000;
-}
-/*.wallet_mdl.modal .modal-content .modal-title img {
-    height: 35px;
-    width: 35px;
-    border: 1px solid #000;
-    padding: 5px;
-    border-radius: 50%;
-    margin-right: 10px;
-}*/
-.wallet_mdl.modal .modal-content .modal-title i {
-  font-size: 24px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-.wallet_mdl.modal .modal-content .wlt_type a img {
-  width: 32px;
-  margin-right: 10px;
-  height: 30px;
-  object-fit: contain;
-}
-.wallet_mdl .modal-dialog {
-  max-width: 500px;
-  margin: 75px 18px auto auto;
-  float: right;
-}
 
-.wallet_mdl .btn-close {
-  background: url(../images/close.png) center/1em auto no-repeat;
-  opacity: 1;
-}
-.wallet_mdl .modal-header {
-  background-color: #000;
-}
-.wallet_mdl .modal-header h5 {
-  color: #fff;
-}
 .nav-item i {
   color: #fff;
   font-size: 24px;
-}
-section.footer {
-  background-color: hsl(240deg 83% 2%);
-  padding: 1rem 0;
-}
-section.footer .ftr_main {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 1.5rem 0 0.5rem;
-}
-section.footer .brdr_ftr {
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  opacity: 0.5;
-  margin-top: 4rem;
-}
-section.footer .ftr_main ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-}
-section.footer .ftr_main ul li {
-  color: #fff;
-  font-weight: 400;
-  font-size: 12px;
-  transition: 1s all ease;
-}
-section.footer .ftr_main ul.ftr_right {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-left: auto;
-}
-section.footer .ftr_main ul.ftr_right li:hover {
-  text-decoration: underline;
-  color: #2216bd;
-}
-section.footer .ftr_main ul.ftr_right li:last-child {
-  margin-left: 20px;
 }
