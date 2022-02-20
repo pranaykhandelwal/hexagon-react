@@ -8,6 +8,7 @@ const ListItem = () => {
     <section class="header">
         <div class="container">
             <div class="header_sub">
+                <Link to='/profile'><i class="fas fa-angle-left"></i></Link>
                 <img src={aboutus} alt=""/>
                 <div>
                   <Link to='/collection' className='btn btn_link'>ICP Bunny #204685388 </Link>
