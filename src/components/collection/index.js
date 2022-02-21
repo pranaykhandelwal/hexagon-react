@@ -1,14 +1,9 @@
 import { Fragment, useState } from 'react';
 import COLLECTION_BNR from '../../assets/images/collection_bnr.jpg'
 import ABOUTUS from '../../assets/images/aboutus.png';
-import COMPUTER from '../../assets/images/Internet Computer.png'
-import RESTAURANTS from '../../assets/images/serch_restaurants.svg'
-import NO_HISTORY_DATA from '../../assets/images/no-history-data.svg'
-import STOLIC_WALLET from '../../assets/images/Stoic Wallet.png'
-import PLUG from '../../assets/images/plug.png'
+import COMPUTER from '../../assets/images/Internet Computer.png';
 import CollectionItems from './collection_item/CollectionItems';
 import CollectionActivity from './collection_activity/CollectionActivity';
-import { Link } from 'react-router-dom';
 
 const Index = () => {
 
@@ -26,43 +21,43 @@ const Index = () => {
 
   return (
     <Fragment>
-    <section class="clctn_prfil">
-        <div class="background">
+    <section className="clctn_prfil">
+        <div className="background">
             <img src={COLLECTION_BNR} alt=""/>
         </div>
-        <div class="prfil_main">
-            <img src={ABOUTUS} class="mx-auto d-block" alt="profile"/>
+        <div className="prfil_main">
+            <img src={ABOUTUS} className="mx-auto d-block" alt="profile"/>
         </div>
     </section>
 
-    <section class="clctn_content">
-        <div class="container">
+    <section className="clctn_content">
+        <div className="container">
             <h1>ICP Bunny</h1>
             <h3>Collection of 77</h3>
-            <div class="row">
-                <div class="col-md-2 col-sm-2 offset-md-2">
-                    <div class="card_clection">
-                        <button type="button" class="btn btn_cont">10K <br/> <span>item</span></button>
+            <div className="row">
+                <div className="col-md-2 col-sm-2 offset-md-2">
+                    <div className="card_clection">
+                        <button type="button" className="btn btn_cont">10K <br/> <span>item</span></button>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-2">
-                    <div class="card_clection">
-                        <button type="button" class="btn btn_cont">985 <br/> <span>owner</span></button>
+                <div className="col-md-2 col-sm-2">
+                    <div className="card_clection">
+                        <button type="button" className="btn btn_cont">985 <br/> <span>owner</span></button>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-2">
-                    <div class="card_clection">
-                        <button type="button" class="btn btn_cont">
+                <div className="col-md-2 col-sm-2">
+                    <div className="card_clection">
+                        <button type="button" className="btn btn_cont">
                           <img src={COMPUTER} alt=""/>
                           2.43
-                          <br/> 
+                          <br/>
                           <span>floor price</span>
                         </button>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-2">
-                    <div class="card_clection">
-                        <button type="button" class="btn btn_cont"><img src={COMPUTER}
+                <div className="col-md-2 col-sm-2">
+                    <div className="card_clection">
+                        <button type="button" className="btn btn_cont"><img src={COMPUTER}
                                 alt=""/> 4.5K <br/> <span>valume
                                 traded</span></button>
                     </div>
@@ -75,19 +70,19 @@ const Index = () => {
         </div>
     </section>
 
-    <section class="prfil_fltr">
-        <div class="container">
-            <ul class="nav nav-tabs justify-content-center">
-                <li class="nav-item" onClick={(e) => HandleShowCollectionItem(e)}>
-                <a className={`nav-link ${showCollectionItem ? 'active' : '' }`} active data-bs-toggle="tab" href="#item"><i class="fas fa-th"></i> Items</a>
+    <section className="prfil_fltr">
+        <div className="container">
+            <ul className="nav nav-tabs justify-content-center">
+                <li className="nav-item" onClick={(e) => HandleShowCollectionItem(e)}>
+                <a className={`nav-link ${showCollectionItem ? 'active' : '' }`} active data-bs-toggle="tab" href="#item"><i className="fas fa-th"></i> Items</a>
                 </li>
-                <li class="nav-item" onClick={(e) => HandleHideCollectionItem(e)}>
-                    <a className={`nav-link ${showCollectionItem ? '' : 'active' }`} data-bs-toggle="tab" href="#activity"><i class="fas fa-chart-line"></i>
+                <li className="nav-item" onClick={(e) => HandleHideCollectionItem(e)}>
+                    <a className={`nav-link ${showCollectionItem ? '' : 'active' }`} data-bs-toggle="tab" href="#activity"><i className="fas fa-chart-line"></i>
                         Activity</a>
                 </li>
             </ul>
 
-            <div class="tab-content">
+            <div className="tab-content">
                 {showCollectionItem && <CollectionItems/>}
                 {!showCollectionItem && <CollectionActivity/>}
             </div>

@@ -1190,20 +1190,6 @@ section.list_content .content .duration .modal-dialog {
   color: #040440;
 }
 
-.inputs {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.inputs > * {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
 /* ============================ */
 /* Type 1 */
 /* ============================ */
@@ -1234,15 +1220,10 @@ section.list_content .content .duration .modal-dialog {
   width: 278px;
   padding: 10px 15px;
 }
+
+
 :focus-visible {
   outline: none;
-}
-
-.inputs .type1 .fields hr.btwen {
-  height: 2px;
-  width: 15px;
-  background-color: #000;
-  margin-top: 52px;
 }
 
 .date-field {

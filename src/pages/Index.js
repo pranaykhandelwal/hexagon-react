@@ -4,22 +4,22 @@ import ABOUT_US from'../assets/images/aboutus.png';
 
 const Index = () => {
   return (
-    <section class="hero">
-    <div class="hero_sub">
-      <div class="row">
-        <div class="col-md-7 col-sm-7" style={{margin: "auto"}}>
+    <section className="hero">
+    <div className="hero_sub">
+      <div className="row">
+        <div className="col-md-7 col-sm-7" style={{margin: "auto"}}>
           <h1> Discover, collect, and sell extraordinary NFTs</h1>
           <p>Hexagon is the world's first and largest <br/> NFT marketplace</p>
-          <div class="btn_group">
+          <div className="btn_group">
             <Link to='' className="btn btn_comn2">Explore</Link>
             <Link to='/create-item' className="btn btn_comn1">Create</Link>
           </div>
         </div>
-        <div class="col-md-5 col-sm-5">
-          <div class="hero_card">
+        <div className="col-md-5 col-sm-5">
+          <div className="hero_card">
             <img src={INDEX_PAGE} alt="" />
-            <div class="card_btm">
-              <div class="d-flex justify-content-between align-items-center">
+            <div className="card_btm">
+              <div className="d-flex justify-content-between align-items-center">
                 <img src={ABOUT_US} alt="" />
                 <div>
                   <p>connected</p>
@@ -27,7 +27,7 @@ const Index = () => {
                 </div>
 
               </div>
-              <i class="fas fa-info-circle fa-lg"></i>
+              <i className="fas fa-info-circle fa-lg"></i>
 
             </div>
           </div>

@@ -25,7 +25,7 @@ const CreateItem = () => {
       <div className="row">
           <div className="col-md-10 col-sm-10 offset-md-1">
               <div className="row">
-                  <div className="col-md-6 col-sm-6" style={{margin: "auto;"}}>
+                  <div className="col-md-6 col-sm-6" style={{margin: "auto"}}>
                       <h1>Create New Item</h1>
                       <p>* Required fields</p>
                       <h5>Image, Video, Audio, or 3D Model</h5>
@@ -35,7 +35,7 @@ const CreateItem = () => {
                   </div>
                   <div className="col-md-5 col-sm-5 offset-md-1">
                       <div className="img-section">
-                          <form action="" method="POST" enctype="multipart/form-data">
+                          <form action="">
                               <div className="row g-0">
                                   <div className="col-md-12">
                                       <div className="form-group">
@@ -66,13 +66,13 @@ const CreateItem = () => {
                       <div className="row">
                           <div className="col-md-6 col-sm-6">
                               <div className="spacing">
-                                  <label for="exampleInputEmail1" className="form-label first">Name *</label>
+                                  <label className="form-label first">Name *</label>
                                   <input type="text" className="form-control" placeholder="Item Name"/>
                               </div>
                           </div>
                           <div className="col-md-6 col-sm-6">
                               <div className="spacing">
-                                  <label for="sel1" className="form-label">Collection <br/> <span>This is the
+                                  <label className="form-label">Collection <br/> <span>This is the
                                           collection where your
                                           item
                                           will appear. &nbsp;<i
@@ -89,12 +89,12 @@ const CreateItem = () => {
                       </div>
 
                       <div className="spacing">
-                          <label for="exampleInputEmail1" className="form-label">External link <br/> <span>OpenSea will
+                          <label className="form-label">External link <br/> <span>OpenSea will
                                   include a link to this URL on this item's detail page, so that users can click to learn more about it. You are welcome to link to your own webpage with more details.</span> </label>
                           <input type="email" className="form-control" placeholder="https://yoursite.io/item/123"/>
                       </div>
                       <div className="spacing">
-                          <label for="comment">Description <br/> <span>The description will be included on the
+                          <label>Description <br/> <span>The description will be included on the
                                   item's detail page underneath its image. <span>Markdown</span> syntax is
                                   supported.</span></label>
                           <textarea className="form-control" rows="5" id="comment" name="text"
@@ -178,7 +178,7 @@ const CreateItem = () => {
                                 <div className="form-check form-switch" onClick={ () => handleState('unlockaleContent') }
                                 aria-controls="demo" aria-expanded={state.unlockaleContent} >
                                     <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                                    <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <label className="form-check-label"></label>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ const CreateItem = () => {
                             <div className="space_2">
                                 <div className="form-check form-switch" data-bs-toggle="collapse" data-bs-target="#demo2">
                                     <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                                    <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <label className="form-check-label"></label>
                                 </div>
                             </div>
                         </div>
@@ -211,12 +211,12 @@ const CreateItem = () => {
                     <div className="card_frm">
                         <form>
                             <div className="spacing">
-                                <label for="exampleInputEmail1" className="form-label">Supply <br/> <span>The number of
+                                <label className="form-label">Supply <br/> <span>The number of
                                         copies that can be minted. No gas cost to you! Quantities above one coming soon.&nbsp;<i className="fas fa-info-circle fa-lg"></i></span></label>
                                 <input type="number" className="form-control" placeholder="1"/>
                             </div>
                             <div className="spacing">
-                                <label for="sel1" className="form-label">Blockchain</label>
+                                <label className="form-label">Blockchain</label>
                                 <select className="form-select" id="sel1" name="sellist1">
                                     <option hidden>ICP</option>
                                     <option>Polygun</option>
@@ -226,7 +226,7 @@ const CreateItem = () => {
                                 </select>
                             </div>
                             <div className="spacing">
-                                <label for="exampleInputEmail1" className="form-label">Freeze metadata &nbsp;<i
+                                <label className="form-label">Freeze metadata &nbsp;<i
                                         className="fas fa-info-circle fa-lg"></i> <br/> <span>Freezing your metadata will
                                         allow you to permanently lock and store all of this item's content in decentralized file storage.</span></label>
                                 <input type="text" className="form-control"
