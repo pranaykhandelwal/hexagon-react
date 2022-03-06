@@ -62,6 +62,10 @@ h5 {
   background-color: #2216bd;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
 .btn_comn2 {
   display: inline-block;
   font-weight: 400;

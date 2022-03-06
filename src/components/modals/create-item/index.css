@@ -60,3 +60,7 @@
   border: #11c0e6 1px solid;
   transition: 0.5s all ease;
 }
+
+.create-item-modal .cursorPointer {
+  cursor: pointer;
+}
