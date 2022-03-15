@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name" : "Collection 1",
+    "imageName": "collection_1.png",
+    "status": "buyNow",
+    "priceType" : "USD",
+    "price" : 1,
+    "likes" : 1
+  },
+  {
+    "id": 2,
+    "name" : "Collection 2",
+    "imageName": "collection_2.png",
+    "status": "onAuction",
+    "priceType" : "USD",
+    "price" : 2,
+    "likes" : 2
+  },
+  {
+    "id": 3,
+    "name" : "Collection 3",
+    "imageName": "collection_3.png",
+    "status": "new",
+    "priceType" : "USD",
+    "price" : 3,
+    "likes" : 3
+  },
+  {
+    "id": 4,
+    "name" : "Collection 4",
+    "imageName": "collection_4.png",
+    "status": "hasOffer",
+    "priceType" : "USD",
+    "price" : 4,
+    "likes" : 5
+  },
+  {
+    "id": 5,
+    "name" : "Collection 5",
+    "imageName": "collection_5.png",
+    "status": "buyNow",
+    "priceType" : "USD",
+    "price" : 5,
+    "likes" : 6
+  },
+  {
+    "id": 6,
+    "name" : "Collection 6",
+    "imageName": "collection_6.png",
+    "status": "onAuction",
+    "priceType" : "USD",
+    "price" : 6,
+    "likes" : 7
+  },
+  {
+    "id": 7,
+    "name" : "Collection 7",
+    "imageName": "collection_7.png",
+    "status": "new",
+    "priceType" : "USD",
+    "price" : 7,
+    "likes" : 8
+  }
+]

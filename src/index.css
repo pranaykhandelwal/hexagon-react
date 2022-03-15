@@ -1126,7 +1126,7 @@ section.prfil_fltr .prfil_sec .item_sec .prfil_img:hover {
 }
 
 section.prfil_fltr .prfil_sec .item_sec .prfil_img img {
-  /*  height: 192px;*/
+  height: 192px;
   margin: 20% 0 12%;
   width: 100%;
 }

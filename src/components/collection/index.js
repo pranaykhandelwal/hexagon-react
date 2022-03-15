@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react';
-import COLLECTION_BNR from '../../assets/images/collection_bnr.jpg'
+import COLLECTION_BNR from '../../assets/images/collection_bnr.png';
 import ABOUTUS from '../../assets/images/aboutus.png';
 import COMPUTER from '../../assets/images/Internet Computer.png';
-import CollectionItems from './collection_item/CollectionItems';
+import CollectionItems from './collection_item';
 import CollectionActivity from './collection_activity/CollectionActivity';
 
 const Index = () => {

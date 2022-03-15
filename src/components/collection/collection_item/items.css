@@ -1,0 +1,19 @@
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+
+section.prfil_fltr .prfil_sec .item_sec .prfil_img .box-price {
+  text-align: right;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(112, 122, 131);
+}
+section.prfil_fltr .prfil_sec .item_sec .prfil_img .box-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #495057;
+}
