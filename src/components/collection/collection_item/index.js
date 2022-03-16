@@ -112,23 +112,18 @@ const CollectionItems = () => {
     let collections = [];
     if(priceFilter.minPrice !== '' && priceFilter.maxPrice !== ''){
       collections = mainCollections.filter((val) => {
-        let checkPrice = val.price >= priceFilter.minPrice && val.price <= priceFilter.maxPrice;
-        return (priceFilter.priceType) ? checkPrice && val.priceType === priceFilter.priceType : checkPrice;
+        return val.price >= priceFilter.minPrice && val.price <= priceFilter.maxPrice;
       });
     } else if(priceFilter.minPrice) {
         collections = mainCollections.filter((val) => {
-        let checkPrice = val.price >= priceFilter.minPrice;
-        return (priceFilter.priceType) ? checkPrice && val.priceType === priceFilter.priceType : checkPrice;
+        return val.price >= priceFilter.minPrice;
       });
     } else if(priceFilter.maxPrice) {
       collections = mainCollections.filter((val) => {
-        let checkPrice = val.price <= priceFilter.maxPrice;
-        return (priceFilter.priceType) ? checkPrice && val.priceType === priceFilter.priceType : checkPrice;
+        return val.price <= priceFilter.maxPrice;
       });
-    } else if(priceFilter.priceType) {
-      collections = mainCollections.filter((val) => {
-        return val.priceType === priceFilter.priceType;
-      });
+    } else {
+      collections = mainCollections;
     }
     setAllCollections([...collections]);
   }
@@ -167,12 +162,12 @@ const CollectionItems = () => {
                     <div id="price" className="collapse show">
                         <div className="content">
                             <form>
-                                <select className="form-select" aria-label="Default select example" value={priceFilter.priceType} onChange = { (e) => handlePriceChange(e, 'priceType') }>
+                                {/* <select className="form-select" aria-label="Default select example" value={priceFilter.priceType} onChange = { (e) => handlePriceChange(e, 'priceType') }>
                                     <option value=""> Select Type</option>
                                     <option value="USD"> United State Dollar(USD)</option>
                                     <option value="Ether"> Ether(ETH)</option>
                                 </select>
-                                <br/>
+                                <br/> */}
 
                                 <div className="d-flex justify-content-between">
                                     <input type="email" className="form-control" placeholder="Min" value={priceFilter.minPrice} onChange = { (e) => handlePriceChange(e, 'minPrice') }/>

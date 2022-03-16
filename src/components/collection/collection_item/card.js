@@ -12,7 +12,7 @@ const Card = ({collection}) => {
                   <a href="collection.html" type="button"
                       className="btn btn_link">{collection?.collectionType} &nbsp;
                       #{collection?.id} <br/> <span>{collection?.name}</span></a>
-                  <span className="box-price float-right">Price <br/><span>{ `${collection.priceType} ${collection?.price}`}</span></span>
+                  <span className="box-price float-right">Price <br/><span>{ `${collection?.price}`}</span></span>
               </div>
 
               <div className="prfil_ftr">
